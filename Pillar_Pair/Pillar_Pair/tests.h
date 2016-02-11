@@ -1,14 +1,13 @@
-//
-//  tests.h
-//  Pillar_Pair
-//
-//  Created by Ben Kohl on 2/11/16.
-//  Copyright © 2016 Ben Kohl. All rights reserved.
-//
+//  header.h
+//  Author: Ben Kohl
+//  Date: 1/26/16
 
-#ifndef tests_h
-#define tests_h
+#ifndef rom_h
+#define rom_h
 
-#include "../Tests/main.cpp"
+#include <iostream>
+#include "main.cpp"
 
-#endif /* tests_h */
+
+
+#endif /* rom_h */

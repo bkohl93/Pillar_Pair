@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9CF3BDC11C6CE06400F94AC4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3BDC01C6CE06400F94AC4 /* main.cpp */; };
-		9CF3BDCE1C6CE13100F94AC4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3BDCD1C6CE13100F94AC4 /* main.cpp */; };
+		9CF3BDCE1C6CE13100F94AC4 /* tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3BDCD1C6CE13100F94AC4 /* tests.cpp */; };
 		9CF3BDD31C6CE16100F94AC4 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF3BDD21C6CE16100F94AC4 /* gtest.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		9CF3BDBD1C6CE06400F94AC4 /* Pillar_Pair */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pillar_Pair; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF3BDC01C6CE06400F94AC4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9CF3BDCB1C6CE13100F94AC4 /* Tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tests; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CF3BDCD1C6CE13100F94AC4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9CF3BDCD1C6CE13100F94AC4 /* tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tests.cpp; sourceTree = "<group>"; };
 		9CF3BDD21C6CE16100F94AC4 /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = ../../../Desktop/gtest.framework; sourceTree = "<group>"; };
 		9CF3BDD41C6CE1F100F94AC4 /* tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +92,7 @@
 		9CF3BDCC1C6CE13100F94AC4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9CF3BDCD1C6CE13100F94AC4 /* main.cpp */,
+				9CF3BDCD1C6CE13100F94AC4 /* tests.cpp */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF3BDCE1C6CE13100F94AC4 /* main.cpp in Sources */,
+				9CF3BDCE1C6CE13100F94AC4 /* tests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +285,18 @@
 		9CF3BDD01C6CE13100F94AC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/benkohl/Desktop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/benkohl/Desktop /Users/benkohl/Documents/googletest-master/googletest/include";
 			};
 			name = Debug;
 		};
 		9CF3BDD11C6CE13100F94AC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/benkohl/Desktop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/benkohl/Desktop /Users/benkohl/Documents/googletest-master/googletest/include";
 			};
 			name = Release;
 		};
